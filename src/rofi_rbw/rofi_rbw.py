@@ -114,7 +114,7 @@ class RofiRbw(object):
 
     def main(self) -> None:
         entries = run(
-            ['rbw', 'ls', '--fields', 'folder,name'],
+            ['rbw', 'ls', '--fields', 'name,user'],
             encoding='utf-8',
             capture_output=True
         ).stdout.strip().split('\n')
