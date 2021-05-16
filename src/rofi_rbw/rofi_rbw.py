@@ -130,7 +130,7 @@ class RofiRbw(object):
 
         (selected_folder, selected_entry) = entry.rsplit('/', 1)
 
-        data = self.get_data(selected_entry.strip(), selected_folder.strip())
+        data = self.get_data(selected_entry.strip())
 
         self.execute_action(data)
 
